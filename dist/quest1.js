@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let entrada = Number(prompt('Digite un númegjhjhghro:'));
 let number = entrada;
 function verify(num) {
@@ -14,4 +12,5 @@ function verify(num) {
     }
 }
 alert(verify(number));
+export {};
 //# sourceMappingURL=quest1.js.map

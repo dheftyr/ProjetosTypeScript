@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let num = Number(prompt("Digite um número:"));
 let numJs = num;
 function verifyPairOrOdd(num) {
@@ -11,4 +9,5 @@ function verifyPairOrOdd(num) {
     }
 }
 alert(verifyPairOrOdd(numJs));
+export {};
 //# sourceMappingURL=quest2.js.map
