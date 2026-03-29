@@ -1,3 +1,11 @@
+// 3. Crie um programa que solicite dois números e simule um menu de uma calculadora:
+// 1 - Soma
+// 2 - Subtração
+// 3 - Multiplicação
+// 4 - Divisão
+// Use switch...Case
+
+
 let number: number = Number(prompt("Digite a opção: \n1 - Soma \n2 - Subtração \n3 - Divisão \n4 - Multiplicação"));
 
 switch (number) {
