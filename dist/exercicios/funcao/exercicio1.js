@@ -5,13 +5,13 @@ let somaString = "";
 function somaAte(num) {
     let soma = 0;
     for (let i = 1; i <= num; i++) {
-        soma += 1;
-        somaString += `(${i + 1}+)`;
+        soma += i;
+        somaString += `${i}+`;
     }
     return soma;
 }
 let number = Number(prompt("Digite um número: "));
 let result = somaAte(number);
-alert(`${somaString} = ${result}`);
+alert(`${somaString.slice(0, -1)} = ${result}`);
 export {};
 //# sourceMappingURL=exercicio1.js.map

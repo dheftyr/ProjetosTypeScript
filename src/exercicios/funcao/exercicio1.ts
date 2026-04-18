@@ -8,9 +8,9 @@ function somaAte(num:number): number {
     let soma: number = 0;
 
     for(let i = 1; i <= num; i++){
-        soma += 1
+        soma += i;
 
-        somaString += `(${i + 1}+)`
+        somaString += `${i}+`
     }
 
     return soma;
@@ -20,4 +20,4 @@ let number: number = Number(prompt("Digite um número: "));
 
 let result = somaAte(number);
 
-alert(`${somaString} = ${result}`)
+alert(`${somaString.slice(0,-1)} = ${result}`)
