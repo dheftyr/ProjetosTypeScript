@@ -3,18 +3,21 @@
 //  Soma total
 
 
-let cont: number = 0;
-let sum: number = 0;
+export function exercicio1():void{
+    let cont: number = 0;
+    let sum: number = 0;
 
-while (true) {
-    let number: number = Number(prompt("Digite um número ou 0 para sair: "));
+    while (true) {
+        let number: number = Number(prompt("Digite um número ou 0 para sair: "));
 
-    cont++;
+        cont++;
 
-    sum += number;
+        sum += number;
 
-    if(number == 0){
-        alert(`Quantidade de números digitados: ${cont} \nSoma total: ${sum}`);
-        break;
+        if(number == 0){
+            alert(`Quantidade de números digitados: ${cont} \nSoma total: ${sum}`);
+            break;
+        }
     }
 }
+

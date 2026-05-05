@@ -13,35 +13,37 @@
 //  Quem foi o vendedor com a maior venda (maior valor digitado).
 //  Quantos vendedores atingiram a categoria &quot;Ouro&quot;.
 
-let sumSale: number = 0;
-let highestSale: number = 0;
-let bestSeller: string = '';
-let goldCount: number = 0; 
-function classificarVenda(value: number): string {
-    if (value < 1000) {
-        return 'Bronze';
-    } else if (value >= 1000 && value <= 5000) {
-        return 'Prata';
-    } else {
-        return 'Ouro';
+export function exercicio5():void{
+    let sumSale: number = 0;
+    let highestSale: number = 0;
+    let bestSeller: string = '';
+    let goldCount: number = 0; 
+    function classificarVenda(value: number): string {
+        if (value < 1000) {
+            return 'Bronze';
+        } else if (value >= 1000 && value <= 5000) {
+            return 'Prata';
+        } else {
+            return 'Ouro';
+        }
     }
+
+    for (let i = 0; i < 5; i++) {
+        let sale: number = Number(prompt(`Digite o valor da venda do ${(i + 1)}º vendedor:`));
+
+        sumSale += sale;
+
+        if (classificarVenda(sale) === 'Ouro') {
+            goldCount++;
+        }
+
+        if (sale > highestSale) {
+            highestSale = sale;
+            bestSeller = `${(i + 1)}° Vendedor`;
+        }
+    }
+
+    alert(`Total de Vendas: R$ ${sumSale.toFixed(2)} 
+    Vendedor com maior venda: ${bestSeller} (R$ ${highestSale.toFixed(2)})
+    Quantidade de vendedores (Ouro): ${goldCount}`);
 }
-
-for (let i = 0; i < 5; i++) {
-    let sale: number = Number(prompt(`Digite o valor da venda do ${(i + 1)}º vendedor:`));
-
-    sumSale += sale;
-
-    if (classificarVenda(sale) === 'Ouro') {
-        goldCount++;
-    }
-
-    if (sale > highestSale) {
-        highestSale = sale;
-        bestSeller = `${(i + 1)}° Vendedor`;
-    }
-}
-
-alert(`Total de Vendas: R$ ${sumSale.toFixed(2)} 
-Vendedor com maior venda: ${bestSeller} (R$ ${highestSale.toFixed(2)})
-Quantidade de vendedores (Ouro): ${goldCount}`);
