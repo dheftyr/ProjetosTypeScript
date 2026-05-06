@@ -6,27 +6,30 @@
 // quilômetros o carro percorre com o tanque cheio.
 
 
-let distancia:number = Number(prompt("Digite a distancia pecorrida:"));
-let combustivel:number = Number(prompt("Digite a quantidade de combustível gasto:"));
-let tanqueC:number = Number(prompt("Capacidade total em litro do tanque"))
+export function exercicio7(): void {
 
-function consumoMedio(disPercorrida:number, combuGasto:number):number{
-    let consumoM:number = 0;
+    let distancia:number = Number(prompt("Digite a distancia pecorrida:"));
+    let combustivel:number = Number(prompt("Digite a quantidade de combustível gasto:"));
+    let tanqueC:number = Number(prompt("Capacidade total em litro do tanque"))
 
-    consumoM =  disPercorrida / combuGasto;
+    function consumoMedio(disPercorrida:number, combuGasto:number):number{
+        let consumoM:number = 0;
 
-    return consumoM;
+        consumoM =  disPercorrida / combuGasto;
+
+        return consumoM;
+    }
+
+    let result = consumoMedio(distancia, combustivel);
+
+    function distanciaPer(conumoM: number, taquenC:number):number{
+        let distPer : number = 0;
+
+        distPer = taquenC * conumoM;
+
+        return distPer;
+    }
+
+
+    alert(distanciaPer(result, tanqueC));
 }
-
-let result = consumoMedio(distancia, combustivel);
-
-function distanciaPer(conumoM: number, taquenC:number):number{
-    let distPer : number = 0;
-
-    distPer = taquenC * conumoM;
-
-    return distPer;
-}
-
-
-alert(distanciaPer(result, tanqueC));

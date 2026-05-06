@@ -1,31 +1,31 @@
-import { exercicio1 } from "./exercicios/repeticao/exercicio1.js";
-import { exercicio2 } from "./exercicios/repeticao/exercicio2.js";
-import { exercicio3 } from "./exercicios/repeticao/exercicio3.js";
-import { exercicio4 } from "./exercicios/repeticao/exercicio4.js";
-import { exercicio5 } from "./exercicios/repeticao/exercicio5.js";
-let btn_exercicio1 = document.querySelector('.btn-exercicio1');
-btn_exercicio1?.addEventListener("click", function (event) {
-    event.preventDefault();
-    exercicio1();
-});
-let btn_exercicio2 = document.querySelector('.btn-exercicio2');
-btn_exercicio2?.addEventListener("click", function (event) {
-    event.preventDefault();
-    exercicio2();
-});
-let btn_exercicio3 = document.querySelector('.btn-exercicio3');
-btn_exercicio3?.addEventListener("click", function (event) {
-    event.preventDefault();
-    exercicio3();
-});
-let btn_exercicio4 = document.querySelector('.btn-exercicio4');
-btn_exercicio4?.addEventListener("click", function (event) {
-    event.preventDefault();
-    exercicio4();
-});
-let btn_exercicio5 = document.querySelector('.btn-exercicio5');
-btn_exercicio5?.addEventListener("click", function (event) {
-    event.preventDefault();
-    exercicio5();
-});
+import { exercicio1 as exeR1 } from "./exercicios/repeticao/exercicio1.js";
+import { exercicio2 as exeR2 } from "./exercicios/repeticao/exercicio2.js";
+import { exercicio3 as exeR3 } from "./exercicios/repeticao/exercicio3.js";
+import { exercicio4 as exeR4 } from "./exercicios/repeticao/exercicio4.js";
+import { exercicio1 as exeF1 } from "./exercicios/funcao/exercicio1.js";
+import { exercicio2 as exeF2 } from "./exercicios/funcao/exercicio2.js";
+import { exercicio3 as exeF3 } from "./exercicios/funcao/exercicio3.js";
+import { exercicio4 as exeF4 } from "./exercicios/funcao/exercicio4.js";
+import { exercicio5 as exeF5 } from "./exercicios/funcao/exercicio5.js";
+import { exercicio6 as exeF6 } from "./exercicios/funcao/exercicio6.js";
+import { exercicio7 as exeF7 } from "./exercicios/funcao/exercicio7.js";
+import { exercicio1 as exeC1 } from "./exercicios/condicional/exercicio1.js";
+import { exercicio2 as exeC2 } from "./exercicios/condicional/exercicio2.js";
+import { exercicio3 as exeC3 } from "./exercicios/condicional/exercicio3.js";
+import { exercicio4 as exeC4 } from "./exercicios/condicional/exercicio4.js";
+document.querySelector(".exercicio1")?.addEventListener('click', exeR1);
+document.querySelector(".exercicio2")?.addEventListener('click', exeR2);
+document.querySelector(".exercicio3")?.addEventListener('click', exeR3);
+document.querySelector(".exercicio4")?.addEventListener('click', exeR4);
+document.querySelector(".exercicio1")?.addEventListener('click', exeF1);
+document.querySelector(".exercicio2")?.addEventListener('click', exeF2);
+document.querySelector(".exercicio3")?.addEventListener('click', exeF3);
+document.querySelector(".exercicio4")?.addEventListener('click', exeF4);
+document.querySelector(".exercicio5")?.addEventListener('click', exeF5);
+document.querySelector(".exercicio6")?.addEventListener('click', exeF6);
+document.querySelector(".exercicio7")?.addEventListener('click', exeF7);
+document.querySelector(".exercicio1")?.addEventListener('click', exeC1);
+document.querySelector(".exercicio2")?.addEventListener('click', exeC2);
+document.querySelector(".exercicio3")?.addEventListener('click', exeC3);
+document.querySelector(".exercicio4")?.addEventListener('click', exeC4);
 //# sourceMappingURL=index.js.map

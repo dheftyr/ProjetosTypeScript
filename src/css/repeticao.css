@@ -99,16 +99,17 @@ body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul{
     gap: 50px;
 }
 
-body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li a{
+body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li input{
    padding: 20px 50px;
    background-color: #3a973b;
    color: #fff;
    border-radius: 18px;
    font-family: 'Roboto';
    font-weight: bolder;
+   font-size: 16px;
 }
 
-body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li a:hover{
+body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li input:hover{
  opacity: 0.90;
  cursor: pointer;
 }

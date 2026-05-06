@@ -6,26 +6,29 @@
 // **
 // ***
 
-let triangle: string = ``;
+export function exercicio3(): void {
 
-function desenhar_triangulo(num:number) {
-    let contLine: number = 0;
-    
+    let triangle: string = ``;
 
-    for(let i = 1; i <= num; i++){
-        contLine++;
+    function desenhar_triangulo(num:number) {
+        let contLine: number = 0;
         
-        for(let i = 0; i < contLine; i++){
-            triangle += `*`
+
+        for(let i = 1; i <= num; i++){
+            contLine++;
+            
+            for(let i = 0; i < contLine; i++){
+                triangle += `*`
+            }
+
+            triangle += `\n`
         }
 
-        triangle += `\n`
     }
 
+    let number: number = Number(prompt("Digite um número: "));
+
+    desenhar_triangulo(number);
+
+    alert(triangle);
 }
-
-let number: number = Number(prompt("Digite um número: "));
-
-desenhar_triangulo(number);
-
-alert(triangle);

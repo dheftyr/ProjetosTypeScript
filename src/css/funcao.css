@@ -96,10 +96,13 @@ body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio{
 
 body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 
-body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li a{
+body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li input{
    padding: 20px 50px;
    background-color: #3a973b;
    color: #fff;
@@ -108,7 +111,7 @@ body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li 
    font-weight: bolder;
 }
 
-body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li a:hover{
+body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li input:hover{
  opacity: 0.90;
  cursor: pointer;
 }

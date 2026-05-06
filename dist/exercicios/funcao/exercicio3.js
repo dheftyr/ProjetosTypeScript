@@ -4,19 +4,20 @@
 // *
 // **
 // ***
-let triangle = ``;
-function desenhar_triangulo(num) {
-    let contLine = 0;
-    for (let i = 1; i <= num; i++) {
-        contLine++;
-        for (let i = 0; i < contLine; i++) {
-            triangle += `*`;
+export function exercicio3() {
+    let triangle = ``;
+    function desenhar_triangulo(num) {
+        let contLine = 0;
+        for (let i = 1; i <= num; i++) {
+            contLine++;
+            for (let i = 0; i < contLine; i++) {
+                triangle += `*`;
+            }
+            triangle += `\n`;
         }
-        triangle += `\n`;
     }
+    let number = Number(prompt("Digite um número: "));
+    desenhar_triangulo(number);
+    alert(triangle);
 }
-let number = Number(prompt("Digite um número: "));
-desenhar_triangulo(number);
-alert(triangle);
-export {};
 //# sourceMappingURL=exercicio3.js.map
