@@ -60,7 +60,7 @@ body .conteiner .conteiner-body .conteiner-body-top {
 }
 
 body .conteiner .conteiner-body .conteiner-body-top a{
-     margin: 10px 10px 0px 0px;
+    margin: 10px 10px 0px 0px;
     padding: 10px 30px;
     background-color: #3a973b;
     color: #fff;
@@ -74,6 +74,16 @@ body .conteiner .conteiner-body .conteiner-body-top a{
 
 body .conteiner .conteiner-body .conteiner-body-top a:hover{
     opacity: 0.90;
+}
+
+body .conteiner .conteiner-body .conteiner-body-top form{
+    margin-top: 10px;
+}
+
+body .conteiner .conteiner-body .conteiner-body-top form input,
+body .conteiner .conteiner-body .conteiner-body-top form button{
+   padding: 10px 30px ;
+   border-radius: 5px;
 }
 
 body .conteiner .conteiner-body .conteiner-body-top h2{
@@ -109,10 +119,23 @@ body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li 
 }
 
 body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li input:hover{
- opacity: 0.90;
- cursor: pointer;
+    opacity: 0.90;
+    cursor: pointer;
 }
 
+.conteiner .conteiner-infomations{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.conteiner .conteiner-infomations-botton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
 
 footer{
     margin-top: 30px;

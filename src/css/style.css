@@ -101,6 +101,19 @@ body .conteiner .conteiner-body-botom .conteiner-body-botom-exercicio nav ul li 
  cursor: pointer;
 }
 
+.conteiner .conteiner-infomations{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.conteiner .conteiner-infomations-botton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
 
 footer{
     margin-top: 30px;
